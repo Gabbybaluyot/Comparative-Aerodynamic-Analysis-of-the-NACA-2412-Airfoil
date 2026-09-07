@@ -1,4 +1,6 @@
 # NACA 2412 Aerodynamic Simulation and Validation
+<img width="1564" height="546" alt="12deg(iso view)" src="https://github.com/user-attachments/assets/d34bd0a5-a8f7-4785-bd8f-aec3b48a155c" />
+
 
 A computational aerodynamics project analyzing the performance of a NACA 2412 airfoil using XFOIL, SolidWorks Flow Simulation (2D), Python, and digitized published aerodynamic data.
 
@@ -36,8 +38,10 @@ $$
 c = 0.75 \text{ m}
 $$
 
-<img width="479" height="206" alt="Screenshot 2026-09-03 200754" src="https://github.com/user-attachments/assets/788de58a-6b41-4e93-96f7-c4aead3f18a8" />
-<img width="493" height="296" alt="naca2412-iso" src="https://github.com/user-attachments/assets/8b67eaab-eb76-47d0-94d8-1c54e908967c" />
+<p align="center">
+  <img width="47%" alt="Screenshot 2026-09-03 200754" src="https://github.com/user-attachments/assets/788de58a-6b41-4e93-96f7-c4aead3f18a8" />
+  <img width="47%" alt="naca2412-iso" src="https://github.com/user-attachments/assets/8b67eaab-eb76-47d0-94d8-1c54e908967c" />
+</p>
 
 ---
 
