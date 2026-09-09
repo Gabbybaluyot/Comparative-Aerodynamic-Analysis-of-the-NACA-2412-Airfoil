@@ -80,6 +80,8 @@ The current XFOIL dataset was generated using
 
 SolidWorks Flow Simulation was used to perform CFD analysis of the same NACA 2412 geometry.
 
+A two-dimensional computational domain was used instead of a traditional three-dimensional domain. This was done to make the SolidWorks simulations more directly comparable with XFOIL, which models the aerodynamic behavior of a two-dimensional airfoil section. Using a 2D domain also removes spanwise and wing-tip effects, allowing the comparison to focus on differences in the predicted airfoil flow and aerodynamic coefficients.
+
 Simulation results were exported as CSV files and processed using Python.
 
 Selected flow conditions were also visualized using
