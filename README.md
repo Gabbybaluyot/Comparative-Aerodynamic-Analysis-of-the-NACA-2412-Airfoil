@@ -197,7 +197,23 @@ Overall, the velocity contours follow the same general trends as the pressure co
 
 ## Flow Trajectories
 
-Flow trajectories provide an additional visualization of how the airflow bends and accelerates around the airfoil.
+Flow trajectory plots were included to visually demonstrate the path the air takes as it moves around the airfoil. They help visualize how strongly the flow is being turned, where it speeds up, whether it remains attached to the surface, and how the wake develops behind the airfoil. 
+
+As the angle of attack changes, the location of the stagnation region and the amount of flow turning around the airfoil also change. These trajectory plots should mainly be interpreted qualitatively, since the exact appearance of the flow paths can also be influenced by mesh resolution and other simulation settings.
+
+### -4° Angle of Attack
+
+<img width="1454" height="596" alt="(-4)deg(side view)" src="https://github.com/user-attachments/assets/03ffc0dd-5bdb-4089-8983-3cbaeb356030" />
+
+At -4° angle of attack, the stagnation region shifts toward the upper side of the leading edge compared with the 0° and 12° cases. This introduces a region with nearly zero velocity, along with high static pressure.
+
+The flow remains mostly smooth and attached around the airfoil, with no obvious large separated region. The airflow over the upper surface is not forced to turn as sharply as it is at positive angles of attack, resulting in a weaker airflow acceleration on the upper-surface.
+
+The lower surface experiences relatively greater flow acceleration than it does at positive angles of attack. This is consistent with the smaller, and potentially reversed, pressure difference between the upper and lower surfaces.
+
+Because the NACA 2412 is cambered, its zero-lift angle is slightly negative rather than exactly 0°. At -4°, the airfoil is therefore near or below its zero-lift condition, so the lift is much smaller and may become negative.
+
+A wake is still present behind the airfoil because of viscous effects and drag. Its exact width and shape may also be affected by the mesh resolution, especially near the trailing edge.
 
 ### 0° Angle of Attack
 
