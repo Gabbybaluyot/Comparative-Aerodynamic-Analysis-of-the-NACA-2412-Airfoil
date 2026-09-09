@@ -219,13 +219,36 @@ A wake is still present behind the airfoil because of viscous effects and drag. 
 
 <img width="1448" height="542" alt="0deg(side view)" src="https://github.com/user-attachments/assets/22ecfad2-028a-4539-829a-0bcabb762a5f" />
 
+At 0° angle of attack, the airflow follows the shape of the NACA 2412 relatively smoothly and remains mostly attached to the surface.
+
+Because the airfoil is cambered, the flow pattern is not perfectly symmetric. The air is turned more strongly over the upper surface, where it also accelerates near the front of the airfoil.
+
+This agrees with the velocity contours, which show higher upper-surface velocity, and the pressure contours, which show lower pressure over the same region. The resulting difference between the upper and lower surface pressure allows the airfoil to produce positive lift even at 0° angle of attack.
+
+As the airflow approaches the trailing edge, the upper and lower flows leave the airfoil and form a wake downstream. This wake appears because the airflow has lost some momentum due to friction and drag.
+
+The mesh can influence how clearly the wake and near-surface trajectories are captured, as a coarse mesh may smooth out some of the smaller changes in flow direction.
 
 ### 12° Angle of Attack
 
 <img width="1564" height="502" alt="12deg(side view)" src="https://github.com/user-attachments/assets/c0fe35e5-d66b-4c78-b82e-5cf90655b20b" />
 
 
-The higher-angle case demonstrates stronger streamline curvature and increased upper-surface acceleration compared with the zero-angle case.
+At 12° angle of attack, the airflow is turned much more strongly around the airfoil.
+
+The stagnation region shifts farther toward the lower side of the leading edge, while the airflow over the upper surface must make a sharper turn around the airfoil. This results in stronger acceleration near the upper leading edge.
+
+The more tightly curved trajectories in this region are consistent with the velocity contours, which show higher flow speeds, and the pressure contours, which show a stronger low-pressure region over the upper surface.
+
+Farther downstream, the airflow over the upper surface begins to slow as the pressure increases again. This creates a stronger adverse pressure gradient.
+
+Because the boundary-layer flow has relatively low momentum, it can have difficulty remaining attached under this stronger pressure gradient. If it slows down enough, the flow may begin to separate from the upper surface near the rear of the airfoil.
+
+This can create a larger disturbed region near the trailing edge and a wider wake downstream. A larger wake is generally associated with greater momentum loss and increased aerodynamic drag.
+
+The 12° case should still be interpreted carefully. As mentioned before, the exact location and size of any separated region may be influenced by the mesh and the simulation model. A coarse mesh can make the wake appear wider or smooth out the point where separation begins.
+
+Overall, the three trajectory plots show a clear change in flow behavior as the angle of attack increases. At -4°, the flow is relatively smooth with weaker upper-surface turning. At 0°, the camber of the airfoil produces noticeable upper-surface acceleration and positive lift. At 12°, the airflow is turned much more sharply, producing stronger acceleration, a larger pressure difference, and a greater possibility of flow separation and increased drag.
 
 ---
 
