@@ -94,51 +94,104 @@ These visualizations were created at selected angles of attack to demonstrate ho
 
 ## Pressure Distribution
 
-Pressure contours were generated at several angles of attack using the same pressure scale so that the results can be visually compared.
+Pressure contour plots were generated at various angles of attack using the same pressure scale so that changes within the pressure field can be compared directly. The pressure distribution around an airfoil is heavily influenced by its geometry, along with the angle of attack. As the airfoil redirects the incoming fluid flow, areas of acceleration and deceleration form around the surface. In regions of approximately incompressible external flow, an increase in flow velocity is generally accompanied by decreases in static pressure, whereas decreases in flow velocity is associated with an increase in static pressure. These differences in pressure between the upper and lower surfaces of the airfoil produces the majority of the aerodynamic lift. Altering the angle of attack changes both the magnitude and location of these pressure regions.
+
 
 ### -4° Angle of Attack
 
 <img width="568" height="360" alt="pressure-plot-(-4 degrees)-2" src="https://github.com/user-attachments/assets/c6206474-8267-4df4-b044-ae27242471f4" />
 
 
-At negative angle of attack, the pressure distribution is relatively weak and the higher-pressure region shifts toward the upper side of the leading edge.
+At a negative angle of attack, the incoming fluid (air) meets the airfoil such that the stagnation region moves upward around the leading edge. This causes a relatively high-pressure region to develop closer to the upper surface of the leading edge, as seen in the diagram.
+
+At the same time, the pressure difference between the upper and lower surfaces becomes much smaller than at positive angles of attack and may begin to reverse depending on the exact operating condition. The NACA 2412 is cambered, meaning that its zero-lift angle occurs at a slightly negative geometric angle of attack rather than exactly 0°. Therefore, at -4°, the airfoil is operating below its approximate zero-lift condition and is expected to produce reduced or negative lift.
+
+The weaker pressure difference visible in the contour is therefore consistent with the reduction and eventual reversal of lift as the angle of attack becomes increasingly negative.
 
 ### 0° Angle of Attack
 
 <img width="650" height="304" alt="pressure-plot-(0 degrees)-2" src="https://github.com/user-attachments/assets/30e3d99c-c7c7-4ed3-a872-499cf85dd9f6" />
 
-Because the NACA 2412 is cambered, a pressure difference still develops between the upper and lower surfaces even at zero geometric angle of attack.
+Despite an angle of attack of 0°, the pressure field is not symmetric because the NACA 2412 is a cambered airfoil.
+
+The curved mean camber line causes the fluid to be redirected even when the chord line is aligned with the freestream. Flow over the upper surface accelerates more strongly, producing a lower-pressure region over the forward portion of the airfoil. At the same time, the lower surface remains at a comparatively higher pressure.
+
+The resulting pressure difference produces positive lift at 0° angle of attack. This is an important distinction between the NACA 2412 and a symmetric airfoil, which would ideally produce approximately zero lift at 0° under comparable conditions.
+
+The lowest pressure typically occurs relatively close to the leading edge, where the surface curvature and flow acceleration are strongest. Moving toward the trailing edge, the pressure gradually recovers toward the freestream value.
+
+This pressure recovery creates an adverse pressure gradient, meaning the pressure increases in the direction of the flow. The boundary layer must move against this increasing pressure while losing momentum because of viscous effects. At moderate angles of attack, the boundary layer still has sufficient momentum to remain largely attached.
 
 ### 12° Angle of Attack
 
 <img width="580" height="281" alt="pressure-plot-(12 degrees)" src="https://github.com/user-attachments/assets/7a02e297-5ec4-4606-8ac4-4326ef7af99f" />
 
-At higher positive angle of attack, a much stronger low-pressure region develops over the upper surface while pressure increases beneath the leading edge.
+At an angle of attack of 12°, the pressure difference between the upper and lower surfaces becomes much larger. The stagnation point moves farther onto the lower surface of the leading edge, creating a strong high-pressure region below the nose of the airfoil.
 
-This larger pressure difference corresponds to increased positive lift.
+Above the leading edge, the fluid must accelerate rapidly around the strongly curved upper surface. This produces a much larger region of low static pressure, often referred to as the upper-surface suction region.
+
+The combination of increased pressure on the lower surface and decreased pressure on the upper surface produces a much larger pressure difference along the airfoil. This corresponds directly to the increased positive lift coefficient expected at higher angles of attack.
+
+The pressure along the upper surface of the airfoil also has to recover from its low value near the leading edge back toward the freestream pressure near the trailing edge. At 12°, this recovery occurs over a stronger adverse pressure gradient than at the lower angles of attack.
+
+A strong adverse pressure gradient is important because the low-momentum air inside the boundary layer can eventually become unable to continue moving downstream against the increasing pressure. If this occurs, the flow begins to separate from the surface.
+
+Therefore, any region of disturbed or detached flow visible toward the rear of the airfoil at 12° may indicate the beginning of significant flow separation. As the angle of attack continues to increase, this separation would grow and eventually contribute to aerodynamic stall, where the airfoil can no longer maintain the expected increase in lift.
 
 ---
 
 ## Velocity Distribution
 
-Velocity contours were also generated using a common scale so that the flow fields can be directly compared.
+Velocity contour plots were generated using a common scale so that changes in flow acceleration around the airfoil can be directly compared.
+
+The velocity and pressure distributions are closely related. Regions where the external flow accelerates around the airfoil generally correspond to reductions in static pressure, while regions of lower velocity are generally associated with pressure recovery or stagnation.
+
+The contours also help demonstrate how the angle of attack changes the location and strength of flow acceleration as well as the wake that develops downstream of the airfoil.
+
 
 ### -4° Angle of Attack
 
 <img width="721" height="289" alt="velocity-plot-(-4 degrees)-2" src="https://github.com/user-attachments/assets/73cf302e-8975-4dd5-8313-8e4ff94d2b81" />
 
+At -4°, the flow acceleration around the upper surface is relatively weak compared with the positive-angle cases.
+
+Because the airfoil is oriented downward relative to the incoming flow, the stagnation region moves toward the upper side of the leading edge. The flow passing around the lower portion of the airfoil can therefore experience comparatively greater acceleration than it does at positive angles of attack.
+
+This redistribution of velocity is consistent with the reduced or negative pressure difference across the airfoil at this operating condition.
+
+Behind the airfoil, a wake is still present because viscous effects cause momentum losses within the boundary layer. However, the wake structure is comparatively modest because the airfoil is not operating at a large positive angle of attack.
+
 ### 0° Angle of Attack
 
 <img width="704" height="337" alt="velocity-plot-(0 degrees)-2" src="https://github.com/user-attachments/assets/5bd0fba9-e61d-43e7-be49-483df994ce05" />
+
+At 0°, the effects of the NACA 2412's camber become visible within the velocity field.
+
+The airflow accelerates over the curved upper surface even though the geometric angle of attack is zero. The maximum velocity generally occurs near the forward portion of the upper surface, near the same region where the pressure contour shows its strongest pressure reduction.
+
+As the flow travels farther downstream, the velocity outside the boundary layer gradually decreases as pressure recovers toward the trailing edge.
+
+Near the airfoil surface, viscosity slows the airflow due to friction with the surface. The velocity increases from zero at the wall to the external flow velocity farther away, forming a boundary layer.
+
+As the airflow leaves the trailing edge, it forms a wake where the velocity is lower than the surrounding flow. This happens because the air loses some momentum due to friction and drag. Meshing within the software can also affect how the wake appears, since a coarse mesh may make it look wider or more spread out than it actually is.
 
 ### 12° Angle of Attack
 
 <img width="648" height="307" alt="velocity-plot-(12 degrees)" src="https://github.com/user-attachments/assets/1aa57ca8-d924-4ce9-ba04-598ef002ef9d" />
 
+At 12°, the most significant upper-surface acceleration occurs near the leading edge.
 
-As angle of attack increases, the simulations show greater acceleration over the upper surface and a more pronounced downstream velocity deficit.
+The increased angle of attack forces the incoming flow to turn more sharply around the upper surface. This produces a larger velocity increase than at 0°, which corresponds to the much lower pressure observed in the same region of the pressure contour.
 
-The velocity plots are primarily used as qualitative flow-field visualizations rather than detailed boundary-layer measurements.
+After reaching this high velocity near the front of the airfoil, the flow must decelerate as it moves toward the trailing edge and the pressure begins to recover. This deceleration occurs within a strong adverse pressure gradient.
+
+Because the boundary-layer flow has relatively low momentum, a strong adverse pressure gradient can slow it down significantly. If it slows enough, the airflow can detach from the airfoil surface, causing flow separation.
+
+At 12° angle of attack, a larger low-velocity region can develop over the rear portion of the upper surface as the airflow begins to slow down and possibly separate. This can create a wider wake behind the airfoil, which is associated with greater momentum loss and increased drag.
+
+The appearance of this wake can also be affected by the mesh. A coarse mesh may smooth out the velocity gradients or make the wake appear wider than it actually is, so some of the details in the contour may be influenced by the mesh resolution.
+
+Overall, the velocity contours follow the same general trends as the pressure contours. As the angle of attack increases, the airflow accelerates more strongly over the upper surface, creating a larger pressure difference and more lift. At higher angles of attack, the stronger pressure recovery can also cause the boundary layer to slow down and separate, leading to a larger wake and increased drag.
 
 ---
 
